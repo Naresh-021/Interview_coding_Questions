@@ -6,6 +6,8 @@ public class swapNumbers {
 
 
     public  static void swap(int a , int b){
+        
+    // Swapping with using the Third variable 
 
         int temp;
 
@@ -18,7 +20,17 @@ public class swapNumbers {
 
     }
 
+     public static void Swapping(int a , int b){
+    // Swapping without using the Third variable 
 
+        System.out.println("The Numbers Before Swap: "+ a + " and "+b);
+        a = a+b;
+        b = a-b;
+        a = a-b;
+
+        System.out.printf("The Numbers After Swap %d and %d",a,b);
+
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
